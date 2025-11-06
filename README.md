@@ -8,6 +8,7 @@ Update book details
 Delete books from the system
 This system uses Object-Oriented Programming (OOP) concepts such as classes, objects, constructors, and encapsulation.
 Data is stored temporarily in a list, simulating a basic in-memory database.
+
 🧠 Concepts Used
 Concept	Description
 Class and Objects	The Book class represents the data model.
@@ -15,6 +16,7 @@ Encapsulation	Book attributes are private, accessed using getters/setters.
 List Collection	Used to store multiple book records dynamically.
 Methods and Functions	Separate functions for each CRUD operation.
 Control Structures	switch, foreach, and loops manage user actions.
+
 💻 Full Source Code (C# Console App)
 using System;
 using System.Collections.Generic;
@@ -74,13 +76,13 @@ namespace LibraryTrackingSystem
             string author = Console.ReadLine();
 
             books.Add(new Book(id, title, author));
-            Console.WriteLine("\n✅ Book added successfully!");
+            Console.WriteLine("\n Book added successfully!");
         }
 
         // Display All Books
         public void ViewBooks()
         {
-            Console.WriteLine("\n📚 Library Book List:");
+            Console.WriteLine("\n Library Book List:");
             if (books.Count == 0)
             {
                 Console.WriteLine("No books available.");
@@ -110,7 +112,7 @@ namespace LibraryTrackingSystem
             }
 
             if (!found)
-                Console.WriteLine("❌ Book not found.");
+                Console.WriteLine(" Book not found.");
         }
 
         // Update Book Availability
@@ -125,11 +127,11 @@ namespace LibraryTrackingSystem
                 Console.Write("Is the book available (yes/no)? ");
                 string response = Console.ReadLine().ToLower();
                 book.IsAvailable = response == "yes";
-                Console.WriteLine("✅ Book updated successfully!");
+                Console.WriteLine(" Book updated successfully!");
             }
             else
             {
-                Console.WriteLine("❌ Book not found.");
+                Console.WriteLine(" Book not found.");
             }
         }
 
@@ -143,11 +145,11 @@ namespace LibraryTrackingSystem
             if (book != null)
             {
                 books.Remove(book);
-                Console.WriteLine("🗑️ Book deleted successfully!");
+                Console.WriteLine(" Book deleted successfully!");
             }
             else
             {
-                Console.WriteLine("❌ Book not found.");
+                Console.WriteLine(" Book not found.");
             }
         }
     }
@@ -193,10 +195,10 @@ namespace LibraryTrackingSystem
                         library.DeleteBook();
                         break;
                     case 6:
-                        Console.WriteLine("👋 Exiting... Thank you!");
+                        Console.WriteLine(" Exiting... Thank you!");
                         break;
                     default:
-                        Console.WriteLine("❌ Invalid choice. Please try again.");
+                        Console.WriteLine(" Invalid choice. Please try again.");
                         break;
                 }
 
@@ -205,12 +207,12 @@ namespace LibraryTrackingSystem
     }
 }
 🧾 How It Works (Workflow)
-Program starts and displays a main menu.
+The program starts and displays a main menu.
 User selects an option (Add, View, Search, Update, Delete).
 The system executes the respective function.
 Data is stored in a List<Book>, acting like an in-memory database.
 The loop continues until the user exits.
-✅ Example Output
+ Example Output
 ===== LIBRARY BOOK TRACKING SYSTEM =====
 1. Add Book
 2. View Books
@@ -224,13 +226,14 @@ Enter Book ID: 101
 Enter Book Title: C# Basics
 Enter Author Name: John Doe
 
-✅ Book added successfully!
+ Book added successfully!
 
 ===== LIBRARY BOOK TRACKING SYSTEM =====
 2
-📚 Library Book List:
+ Library Book List:
 ID: 101, Title: C# Basics, Author: John Doe, Available: Yes
-🧾 Conclusion
+
+ Conclusion
 This Library Book Tracking System in C# demonstrates:
 How to manage data using OOP principles.
 Use of Lists for data storage.
