@@ -1,4 +1,4 @@
-🧩 Description
+ Description
 The Library Book Tracking System is a console-based application built in C# that helps manage books in a library.
 It allows users (librarians) to:
 Add new books
@@ -9,7 +9,7 @@ Delete books from the system
 This system uses Object-Oriented Programming (OOP) concepts such as classes, objects, constructors, and encapsulation.
 Data is stored temporarily in a list, simulating a basic in-memory database.
 
-🧠 Concepts Used
+ Concepts Used
 Concept	Description
 Class and Objects the Book class represents the data model.
 Encapsulation Book attributes are private, accessed using getters/setters.
@@ -17,7 +17,7 @@ List Collection	Used to store multiple book records dynamically.
 Methods and Functions Separate functions for each CRUD operation.
 Control Structures switch, foreach, and loops manage user actions.
 
-💻 Full Source Code (C# Console App)
+ Full Source Code (C# Console App)
 
 
 using System;
